@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff; /* Azul claro */
+    margin: 0;
+    padding: 0;
+}
+
+.formulario {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff; /* Fundo branco */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra leve */
+}
+
+.formulario p {
+    margin-bottom: 10px;
+}
+
+.formulario input[type="text"] {
+    width: calc(100% - 20px); /* Largura total - margem */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.formulario button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff; /* Azul */
+    color: #fff; /* Texto branco */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.formulario button:hover {
+    background-color: #0056b3; /* Azul mais escuro ao passar o mouse */
+}
+
+.resultado {
+    margin-top: 20px;
+}
