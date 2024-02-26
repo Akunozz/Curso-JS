@@ -5,7 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Modelo</title>
+  <title>IMC</title>
   <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 
@@ -13,32 +13,23 @@
 
   <section class="container">
     <h1>Tabela IMC</h1>
-    <p>
-    <strong>IMC</strong><br>
-      Menos do que 18,5<br>
-      Entre 18,5 e 24,9<br>
-      Entre 25 e 29,9<br>
-      Entre 30 e 34,9<br>
-      Entre 35 e 39,9<br>
-      Mais do que 40<br>
-    </p>
-
-    <p>
-      <strong>Resultado</strong><br>
-      Abaixo do peso<br>
-      Peso ideal<br>
-      Sobrepeso<br>
-      Obesidade grau 1<br>
-      Obesidade grau 2<br>
-      Obesidade grau 3<br>
-    </p>
-
-
-    <form class="formulario" action="">
-      <h1>Calcule seu IMC:</h1>
-      <p>Peso (em kilogramas): <input type="text" class="peso"></p>
-      <p>Altura (em centimetros): <input type="text" class="altura"></p>
+    <p><strong><span style="margin-right: 280px;">IMC</span><span>Resultado</span></strong></p>
+    <p><span style="margin-right: 133px;">Menos do que 18,5</span>Abaixo do peso</p>
+    <p><span style="margin-right: 155px;">Entre 18,5 e 24,9</span>Peso ideal</p>
+    <p><span style="margin-right: 175px;">Entre 25 e 29,9</span>Sobrepeso</p>
+    <p><span style="margin-right: 175px;">Entre 30 e 34,9</span>Obesidade grau 1</p>
+    <p><span style="margin-right: 175px;">Entre 35 e 39,9</span>Obesidade grau 2</p>
+    <p><span style="margin-right: 173px;">Mais do que 40</span>Obesidade grau 3</p>
+  
+    
+    <h1>Calcule seu IMC:</h1>
+    <form class="form">
+      <label for="peso">Peso:</label>
+      <input type="text" id="peso" name="peso">
+      <label for="altura">Altura:</label>
+      <input type="text" id="altura" name="altura">
       <button>Calcular</button>
+    </form>
   </section>
 
   <div class="resultado">
