@@ -1,3 +1,4 @@
+// Capturar evento de submit do formulário
 const form = document.querySelector('#formulario');
 
 form.addEventListener('submit', function (e) {
@@ -21,15 +22,10 @@ form.addEventListener('submit', function (e) {
   const imc = getImc(peso, altura);
   const nivelImc = getNivelImc(imc);
 
-  const msg = `Seu IMC é ${imc.toFixed(2)} (${nivelImc}).`;
+  const msg = `Seu IMC é ${imc} (${nivelImc}).`;
 
   setResultado(msg, true);
 });
-
-function getImc (peso, altura) {
-  const imc = peso / altura ** 2;
-  return imc;
-}
 
 function getNivelImc (imc) {
   const nivel = ['Abaixo do peso', 'Peso normal', 'Sobrepeso',
@@ -41,6 +37,11 @@ function getNivelImc (imc) {
   if (imc >= 24.9) return nivel[2];
   if (imc >= 18.5) return nivel[1];
   if (imc < 18.5) return nivel[0];
+}
+
+function getImc (peso, altura) {
+  const imc = peso / altura ** 2;
+  return imc.toFixed(2);
 }
 
 function criaP () {

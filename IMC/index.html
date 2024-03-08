@@ -23,18 +23,19 @@
   
     
     <h1>Calcule seu IMC:</h1>
-    <form class="form">
+    <form action="/" id="formulario" method="POST">
       <label for="peso">Peso:</label>
       <input type="text" id="peso" name="peso">
       <label for="altura">Altura:</label>
       <input type="text" id="altura" name="altura">
-      <button>Calcular</button>
+      <button type="submit">Calcular</button>
     </form>
+
+    <div id="resultado">
+    </div>
+
   </section>
 
-  <div class="resultado">
-
-  </div>
 
   <script src="./assets/js/main.js"></script>
 </body>
